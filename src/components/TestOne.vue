@@ -11,9 +11,13 @@ export default {
   setup() {
     useMeta({
       title: "testtesttest",
-      htmlAttrs: {
-        lang: "zh-tw",
-      },
+      meta: [
+        { property: "og:title", content: "testForMetaTag" },
+        {
+          property: "og:type",
+          content: "website",
+        },
+      ],
     });
   },
 };
