@@ -4,7 +4,8 @@
   </metainfo>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/testone">testOne</router-link>
+    <router-link to="/testone">testOne</router-link> |
+    <router-link to="/nositename">NoSiteName</router-link>
   </nav>
 
   <img alt="Vue logo" src="./assets/logo.png" />
