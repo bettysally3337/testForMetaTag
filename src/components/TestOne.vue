@@ -5,10 +5,11 @@
   <blockquote>
     使用 useMeta <br />
     ({ title: "testtesttest",
-    <br />meta: [ <br />{property: "og:title", content: "testOne" }, <br />{
-    property: "og:type", content: "website" }, <br />{property: "og:url",
-    content: "https://20241108opengraph.netlify.app/testone",}, <br />{
-    property: "og:image",
+    <br />meta: [ <br />
+    { property: "og:site_name", content: "TestOne" }, <br />{ property:
+    "og:type", content: "website" }, <br />{property: "og:url", content:
+    "https://20241108opengraph.netlify.app/testone",}, <br />{ property:
+    "og:image",
     content:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Dw7-4lVfRq74_YEiPEt4e-bQ0_6UA2y73Q&s",
     }
   </blockquote>
