@@ -3,7 +3,7 @@
     <template v-slot:title="{ content }">{{ content }} -yay!</template>
   </metainfo>
   <nav>
-    <router-link to="/">Home</router-link>
+    <router-link to="/">Home</router-link> |
     <router-link to="/testone">testOne</router-link>
   </nav>
 
@@ -28,6 +28,17 @@ export default {
         lang: "en",
         amp: true,
       },
+      meta: [
+        { property: "og:title", content: "Home" },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:url",
+          content: "https://20241108opengraph.netlify.app",
+        },
+      ],
     });
   },
 };
