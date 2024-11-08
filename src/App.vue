@@ -1,17 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content }} -yay!</template>
+  </metainfo>
+  <nav>
+    <router-link to="/">Home</router-link>
+    <router-link to="/testone">testOne</router-link>
+  </nav>
+
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
+import { useMeta } from "vue-meta";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  // components: {
+  //   HelloWorld,
+  // },
+  setup() {
+    useMeta({
+      title: "Lexi Example using vue-meta",
+      htmlAttrs: {
+        lang: "en",
+        amp: true,
+      },
+    });
+  },
+};
 </script>
 
 <style>
