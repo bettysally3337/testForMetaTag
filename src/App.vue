@@ -29,7 +29,7 @@ export default {
         amp: true,
       },
       meta: [
-        { property: "og:title", content: "Home" },
+        { property: "og:site_name", content: "Lexi Site" },
         {
           property: "og:type",
           content: "website",

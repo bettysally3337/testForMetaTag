@@ -22,7 +22,7 @@ export default {
     useMeta({
       title: "testtesttest",
       meta: [
-        { property: "og:title", content: "testOne" },
+        { property: "og:site_name", content: "Lexi Site" },
         {
           property: "og:type",
           content: "website",
